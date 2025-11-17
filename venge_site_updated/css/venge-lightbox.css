@@ -1,0 +1,15 @@
+
+/* Venge Lightbox (drop-in) */
+.vg-lightbox-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.85);display:none;align-items:center;justify-content:center;z-index:9999}
+.vg-lightbox-backdrop.show{display:flex}
+.vg-lightbox-wrap{position:relative;max-width:95vw;max-height:90vh}
+.vg-lightbox-img{max-width:95vw;max-height:90vh;display:block;border-radius:10px;box-shadow:0 10px 40px rgba(0,0,0,.6)}
+.vg-lightbox-btn{position:absolute;top:50%;transform:translateY(-50%);border:none;background:rgba(255,255,255,.15);color:#fff;font-size:28px;width:46px;height:46px;border-radius:50%;cursor:pointer;backdrop-filter:blur(3px)}
+.vg-lightbox-btn:hover{background:rgba(255,255,255,.25)}
+.vg-prev{left:-64px}
+.vg-next{right:-64px}
+.vg-close{top:-56px;right:-8px;transform:none;width:40px;height:40px}
+@media (max-width:768px){
+  .vg-prev{left:-48px} .vg-next{right:-48px}
+  .vg-close{top:-48px;right:-6px}
+}
